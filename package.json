@@ -4,11 +4,22 @@
   "description": "blobr tool",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "build": "shx rm -rf dist && webpack && shx mv dist/main.js dist/blobr.js && pkg dist/blobr.js && shx mv blobr-{linux,macos,win.exe} dist",
+    "start": "node src/index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "author": "Michael Tarng <20913254+mtarng@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "wait-for-user-input": "^1.0.0"
+    "pkg": "^4.4.0",
+    "shx": "^0.3.2",
+    "wait-for-user-input": "^1.0.0",
+    "webpack": "^4.41.2"
+  },
+  "repository": "git@github.com:mtarng/blobr.git",
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
   }
 }
