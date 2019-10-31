@@ -2,7 +2,7 @@ const waitForUserInput = require('wait-for-user-input')
 
 blobr();
 
-export async function blobr () {
+async function blobr () {
     while (true) {
         const userInput = await waitForUserInput('pls to blobr: \n');
 
