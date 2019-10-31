@@ -1,0 +1,14 @@
+{
+  "name": "blobr",
+  "version": "1.0.0",
+  "description": "blobr tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Michael Tarng <20913254+mtarng@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "wait-for-user-input": "^1.0.0"
+  }
+}
